@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <link rel = "stylesheet" href = "static/css/navbar.css">
+        <link rel = "stylesheet" href = "static/css/aboutme.css">
+        <script src = "https://kit.fontawesome.com/67c66657c7.js"></script>
+        <div class="menu" id="sticky">
+            <div class = "discordlogo">
+                <img src = "static/images/book_mark_logo.png">
+            </div>
+            <u1 class="menu-u1">
+                <a href="index.html" class="a-menu">
+                    <li>Home </li>
+                </a>
+                <a href="documentation.html" class="a-menu" >
+                    <li>Documentation</li>
+                </a>
+                <a href="aboutme.html" class="a-menu" id = "current-page">
+                    <li>About me</li>
+                </a>
+                <a href="https://discord.com/api/oauth2/authorize?client_id=837831896146771998&permissions=0&scope=bot" class="a-menu">
+                    <li>Add to Discord</li>
+                </a>
+            </u1>
+        </div>
+</head>
+
+
+
+<body>
+
+    <div class = "msg-container">
+      
+
+        <div id = "slider">
+            <div class = msg-col>
+              <h1>Why Study Buddy?</h1>
+              <p>Spending too much time at your computer can be very detrimental to your health. 
+                Whether you are studying for your online classes, or just like to play games from time to time,
+                 I am the perfect bot for you! I can be used to help keep you happy, healthy, and productive!
+              </p>
+            </div>
+            <div class = msg-col>
+              <h1>Benefits</h1>
+              <p>I am very easy to use, and allow you to access me at any time on your Discord! 
+                I know with online school and video games you are probably on your computer a lot.
+                 Why not let me organize and remind you of all your productivity and health concerns, all in one centralized location!
+              </p>
+            </div>
+            <div class = msg-col>
+              <h1>Our motive</h1>
+              <p>My creators found it hard to stay focused and healthy while on their computers. They found many remedies to cope with these issues, 
+                but they were very busy and could not find time to schedule and keep track of it all. As a result, I was created to solve their problems, and hopfully yours too!
+              </p>
+            </div>
+            <div class = msg-col>
+              <h1>Who Created Me?</h1>
+              <p>I was created by Daniel Wagner, Ryan Lee, Ryan Tobia, and Luke Avveduto as part of RU Hacks 2021 !
+              </p>
+            </div>
+        </div>
+      </div>
+      <div class = "controller">
+        <div id = "line1"></div>
+        <div id = "line2"></div>
+        <div id = "line3"></div>
+        <div id = "line4"></div>
+        <div id = "active"></div>
+  
+      </div>
+  
+  
+        
+      <div class = "section2">
+        <div class = "featuresTitle">
+            <h3>Features</h3>
+        </div>
+  
+        <div class = "box">
+          <div class = "icon">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <div class ="featurescontent">
+              <h3>Health</h3>
+              <p>Quarantine has many of us glued to our computers screens, looking for something to do.
+                 This can lead to many health issues, particularly eye strain. The Study Buddy Bot has an eye strain 
+                 reduction session which will send you a direct message every 20 minutes reminding you to take a break 
+                 and look away from the screen. It also has a water session which will remind you to drink an appropriate 
+                 amount of water each day. The Study Buddy Bot is very easy to use, and allows you to receive these reminders 
+                 on any device that is signed into Discord. This means your reminders will reach you even when you are away from your computer! </p>
+          </div>
+        </div>
+        <div class = "box">
+          <div class = "icon">
+            <i class="fas fa-edit"></i>
+          </div>
+          <div class ="featurescontent">
+              <h3>Productivity</h3>
+              <p>With quarantine, many of us are stuck at our computers longing for motivation. Whether you are in school and are having difficulty staying focused on 
+                homework, or you just want to better youself during your free time, the Study Buddy Bot is here to help ensure you achieve your goals. It can be very 
+                stressfull trying to keep track of all the tasks at hand, and when you try to use time management techniques, it is often just another thing you have 
+                in the back of your mind while studying. The Study Buddy Bot can help to organize all your needs in one centralized location and send you direct messages when there is something that 
+                 should be done. Let the Study Buddy Bot worry about all the details and focus only on the task at hand. </p>
+          </div>
+        </div>
+        <div class = "box">
+          <div class = "icon">
+            <i class="fas fa-user-cog"></i>
+          </div>
+          <div class ="featurescontent">
+              <h3>Personalization</h3>
+              <p>The Study Buddy Bot allows you to customize your preferences. Not everyone wants to work at a maximized effeciency constantly. 
+                Sometimes we just need a little encouragement. With the Study Buddy Bot, you can begin different sessions based on your needs. 
+                If you just need a reminder to drink water, you can start a water session. If you are cramming for an upcoming exam and need to 
+                be very productive, you can start a pomodoro session to optimize your productivity, and keep track of your goals and tasks using Study Buddy Bot's to-do feature. 
+                This allows you to add or remove tasks to your to-do list and view it to ensure you never miss out on what needs to be done.  </p>
+          </div>
+        </div>
+  
+  
+  
+      <script>
+        var slider = document.getElementById('slider');
+        var active = document.getElementById('active');
+        var line1 = document.getElementById('line1');
+        var line2 = document.getElementById('line2');
+        var line3 = document.getElementById('line3');
+        var line4 = document.getElementById('line4');
+  
+        line1.onclick = function(){
+          slider.style.transform = "translateX(0)";
+          active.style.top = "0px";
+        }
+        line2.onclick = function(){
+          slider.style.transform = "translateX(-25%)";
+          active.style.top = "40px";
+        }
+        line3.onclick = function(){
+          slider.style.transform = "translateX(-50%)";
+          active.style.top = "80px";
+        }
+        line4.onclick = function(){
+          slider.style.transform = "translateX(-75%)";
+          active.style.top = "120px";
+        }
+      </script>
+  
+
+</body>
+
+</html>
